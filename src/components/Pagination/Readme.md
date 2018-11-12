@@ -1,3 +1,3 @@
 ```js
-<Pagination />
+<Pagination pages="10" />
 ```

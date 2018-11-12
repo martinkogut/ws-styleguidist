@@ -12,16 +12,49 @@ class Pagination extends React.Component {
 
   render() {
     const baseClass = s.pagination
+    const rootClass = classNames(baseClass, {
+      ['pagination']: 'pagination',
+    })
     return (
-      <ul className={baseClass}>
+      <ul className={rootClass}>
         <li>
           <a href="#">
-            <i>1</i>
+            <span>
+              <i className="fa fa-angle-double-left"></i>
+            </span>
+          </a>
+        </li>
+        {
+          this.pages()
+        }
+        <li>
+          <a href="#">
+            <span>
+              <i className="fa fa-angle-double-right"></i>
+            </span>
           </a>
         </li>
       </ul>
     )
   }
+
+  pages = () => {
+    let pages = this.state.pages
+    let temp = []
+    for (let i = 1; i <= pages; i++) {
+      temp.push(
+        <li>
+          <a href="#">
+            <span>
+              {`${i}`}
+            </span>
+          </a>
+        </li>
+      )
+    }
+    return temp
+  }
+
 }
 
 export default Pagination
