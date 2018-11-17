@@ -27,7 +27,7 @@ class CallToAction extends React.Component {
                 <input type="email" placeholder="Your email address" />
               : null
             }
-            <Button className="wow fadeIn animated" context="light" text="Get in touch" data-wow-delay=".3s" data-wow-duration="1s" style={{visibility: 'visible', animationDuration: '1s', animationDelay: '0.3s'}} />
+            <Button large={true} className="wow fadeIn animated" context="light" text="Get in touch" data-wow-delay=".3s" data-wow-duration="1s" style={{visibility: 'visible', animationDuration: '1s', animationDelay: '0.3s'}} />
           </div>
         </div>
       </div>
