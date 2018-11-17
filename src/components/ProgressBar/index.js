@@ -27,12 +27,21 @@ class ProgressBar extends React.Component {
       </div>
     )
   }
-}
 
-ProgressBar.PropTypes = {
-  type: PropTypes.string,
-  progress: PropTypes.string,
-  title: PropTypes.string,
+  static propTypes = {
+    /** Type of progress bar [small] */
+    type: PropTypes.string,
+    /** Value of progress from 0 to 100 percent */
+    progress: PropTypes.number.isRequired,
+    /** Description below progress bar */
+    title: PropTypes.string,
+  }
+
+  static defaultProps = {
+    type: null,
+    progress: 0
+  }
+
 }
 
 export default ProgressBar
