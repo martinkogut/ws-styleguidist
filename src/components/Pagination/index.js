@@ -55,6 +55,11 @@ class Pagination extends React.Component {
     return temp
   }
 
+  static propTypes = {
+    /** Numbers of pages to paginate */
+    pages: PropTypes.number,
+  }
+
 }
 
 export default Pagination
