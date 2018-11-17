@@ -32,12 +32,16 @@ class Testimonial extends React.Component {
       </div>
     )
   }
-}
 
-Testimonial.PropTypes = {
-  quote: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  company: PropTypes.string.isRequired,
+  static propTypes = {
+    /** Text of quoate */
+    quote: PropTypes.string.isRequired,
+    /** Name of the person who wrote the quoate */
+    name: PropTypes.string.isRequired,
+    /** Company of person's quotation */
+    company: PropTypes.string.isRequired,
+  }
+
 }
 
 export default Testimonial
