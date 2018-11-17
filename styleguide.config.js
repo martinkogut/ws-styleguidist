@@ -9,6 +9,15 @@ module.exports = {
           exclude: /node_modules/,
           loader: 'babel-loader'
         },
+        {
+          test: /\.(jpg|png|gif)$/,
+          use: {
+            loader: "file-loader",
+            options: {
+              name: "[path][name].[hash].[ext]",
+            },
+          },
+        },
         // Other loaders that are needed for your components
         {
           test: /\.(css|scss)$/,
@@ -25,7 +34,7 @@ module.exports = {
             },
             'sass-loader'
           ]
-        }
+        },
       ]
     }
   },
