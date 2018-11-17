@@ -25,12 +25,16 @@ class Alert extends React.Component {
       </div>
     )
   }
-}
 
-Alert.PropTypes = {
-  type: PropTypes.string.isRequired,
-  title: PropTypes.string,
-  message: PropTypes.string
+  static propTypes = {
+    /** Type of Alert [success, info, warning, error] */
+    type: PropTypes.string.isRequired,
+    /** Title of the alert */
+    title: PropTypes.string,
+    /** Message of the alert */
+    message: PropTypes.string
+  }
+
 }
 
 export default Alert
