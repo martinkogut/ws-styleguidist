@@ -33,11 +33,20 @@ class CallToAction extends React.Component {
       </div>
     )
   }
-}
 
-CallToAction.PropTypes = {
-  dark: PropTypes.string,
-  text: PropTypes.string,
+  static propTypes = {
+    /** Add dark background */
+    dark: PropTypes.bool,
+    /** CTA as newsletter with input field */
+    newsletter: PropTypes.bool,
+    /** Add CTA text as headline */
+    text: PropTypes.string,
+  }
+  static defaultProps = {
+    dark: false,
+    newsletter: false
+  }
+
 }
 
 export default CallToAction
