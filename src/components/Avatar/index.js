@@ -13,11 +13,14 @@ class Avatar extends React.Component {
       <img src={this.state.src} alt={this.state.alt} />
     )
   }
-}
 
-Avatar.PropTypes = {
-  src: PropTypes.string.isRequired,
-  alt: PropTypes.string
+  static propTypes = {
+    /** Source to image */
+    src: PropTypes.string.isRequired,
+    /** Alternative description if no image available */
+    alt: PropTypes.string
+  }
+
 }
 
 export default Avatar
