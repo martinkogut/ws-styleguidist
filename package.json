@@ -28,7 +28,7 @@
   ],
   "devDependencies": {
     "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.4",
+    "babel-loader": "^8.0.4",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
@@ -39,6 +39,6 @@
     "sass-loader": "^7.1.0",
     "style-loader": "^0.21.0",
     "url-loader": "^0.6.2",
-    "webpack": "^4.16.1"
+    "webpack": "^4.19.1"
   }
 }
