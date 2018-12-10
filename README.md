@@ -48,3 +48,14 @@ Start the styleguidist build
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Docker
+
+If you've successfully triggerd a build (running the command `npx styleguidist build`) a directory `/styleguide` will be created on your root directory. 
+
+### Container
+Your container will be build automatically via the Dockerfile. You have to run the following command in your terminal `docker build -t ws-styleguidist .`
+
+After building is done, start the container with `docker run -p 4000:80 ws-styleguidist`
+
+Your Docker instance will be available on port 4000. Just click the Link to head over to your [Docker Styleguidist instance](http://localhost:4000/)
